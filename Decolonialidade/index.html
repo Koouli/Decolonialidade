@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -43,21 +44,141 @@
     
     <main>
         <div class="main-hd"></div>
-        <section class="membros-deco">
-            <div class="membro-card">
-                <div class="membro-img">
-                    <img src="img/ricardo.webp" alt="">
-                </div>
-                <div class="membro-cont">
-                    <div class="membro-nome h5">
-                        Ricardão
+        <section class="membros-deco swiper-container mySwiper">
+            <div class="membro-title">
+                <p>Nossos Membros:</p>
+            </div>
+            <div class="cards-deco swiper-wrapper">
+                <div class="membro-card swiper-slide">
+                    <div class="membro-img">
+                        <img src="img/ricardo.webp" alt="">
                     </div>
-                    <div class="membro-desc">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae nam suscipit eligendi voluptatibus assumenda est.
+                    <div class="membro-cont">
+                        <div class="membro-nome h5">
+                            Ricardão
+                        </div>
+                        <div class="membro-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae nam suscipit eligendi voluptatibus assumenda est.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="membro-card swiper-slide">
+                    <div class="membro-img">
+                        <img src="img/ricardo.webp" alt="">
+                    </div>
+                    <div class="membro-cont">
+                        <div class="membro-nome h5">
+                            Ricardão
+                        </div>
+                        <div class="membro-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae nam suscipit eligendi voluptatibus assumenda est.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="membro-card swiper-slide">
+                    <div class="membro-img">
+                        <img src="img/ricardo.webp" alt="">
+                    </div>
+                    <div class="membro-cont">
+                        <div class="membro-nome h5">
+                            Ricardão
+                        </div>
+                        <div class="membro-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae nam suscipit eligendi voluptatibus assumenda est.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="membro-card swiper-slide">
+                    <div class="membro-img">
+                        <img src="img/ricardo.webp" alt="">
+                    </div>
+                    <div class="membro-cont">
+                        <div class="membro-nome h5">
+                            Ricardão
+                        </div>
+                        <div class="membro-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae nam suscipit eligendi voluptatibus assumenda est.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="membro-card swiper-slide">
+                    <div class="membro-img">
+                        <img src="img/ricardo.webp" alt="">
+                    </div>
+                    <div class="membro-cont">
+                        <div class="membro-nome h5">
+                            Ricardão
+                        </div>
+                        <div class="membro-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae nam suscipit eligendi voluptatibus assumenda est.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="membro-card swiper-slide">
+                    <div class="membro-img">
+                        <img src="img/ricardo.webp" alt="">
+                    </div>
+                    <div class="membro-cont">
+                        <div class="membro-nome h5">
+                            Ricardão
+                        </div>
+                        <div class="membro-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae nam suscipit eligendi voluptatibus assumenda est.
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
         </section>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 15,
+        slidesPerGroup: 5,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+    <div class="about-deco">
+        <div class="block-about"></div>
+        <div class="about-cont">
+            <div class="about-title">
+                <p id="abt-1">Sobre</p>
+                <p id="abt-2">Deco</p>
+                <p id="abt-3">lonialidade</p>
+            </div>
+            <div class="about-desc">
+                O chamado pensamento decolonial, representa um conceito de formulações teóricas as quais vem sendo desenvolvidas desde o 
+            final do século XX, através do grupo de pesquisa: Modernidade/Colonialidade. Consuma-se que o termo <i>decolonial</i>
+            expressa a necessidade de produção de um pensamento sob o ponto de vista dos subalternizados pela Modernidade
+            capitalista politicamente em contraposição à perspectiva eurocêntrica hegemônica na academia em relação 
+            ao conhecimento histórico e social.
+
+            </div>
+        </div>
+    </div>
 
         <div class="main-fd"></div>
     </main>

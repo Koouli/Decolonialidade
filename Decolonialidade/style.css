@@ -152,42 +152,92 @@ main{
     height: 100%;
     width: 100%;
     background-color: #fffbed;
-    padding: 0% 6% 32% 6%;
+    padding: 0% 0% 32% 0%;
     margin: 0 auto;
+    overflow-x: hidden ;
 }
 .main-hd{
     content: "";
-    height: 50vh;  
+    height: 55vh;  
     width: 100%;
-    margin-bottom: 5%;
+    margin: 5% 0%;
 }
 
 
 .membros-deco{
+    position: relative;
+    display: flex;
+    width: 98vw;
+    height: 70vh;
+    margin-bottom: 2%;
+
+}
+.membro-title{
+    position: absolute;
+    top: 0%;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    display: block;
     width: 100%;
-    height: 320px;
+    font-size: 1.6rem;
+    left: 3%;
+}
+.cards-deco{
+    margin: 4% 0% 0%;
+    position: absolute;
 }
 .membro-card{
+    position: relative;
     text-align: center;
-    place-items: center;
-    height: 100%;
-    width: 23%;
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-    padding-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+    width: 16%;
+    display: flex;
+    justify-items: center;
     
 }
 .membro-img{
+    display: inline-flex;
+    position: relative;
     object-fit: contain;
-    width: 68%;
+    width: 72%;
     margin-bottom: 2%;
+    border-radius: 50%;
+    transition: .5s;
 }
 .membro-img img{
     width: 100%;
     border-radius: 50%;
+    
 }
-.membro-card:hover{
-
+.membro-cont{
+    display: inline-flex;
+    flex-direction: column;
+}
+.membro-desc{
+    padding: 0% 5%;
+}
+.membro-card:hover .membro-img{
+    opacity: .85;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 
+.about-deco{
+    width: 100%;
+    height: 72vh;
+    background-color: #22222227;
+    position: relative;
+    padding: 1% 2%;
+    display: flex;
+
+}
+
+.block-about{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8%;
+    width: 60%;
+    background-color: #e46046;
+}
